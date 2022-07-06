@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 505190185}
   - component: {fileID: 505190184}
   m_Layer: 5
-  m_Name: 'Size Changes:'
+  m_Name: Switches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,7 +1012,7 @@ GameObject:
   - component: {fileID: 940934514}
   - component: {fileID: 940934513}
   m_Layer: 5
-  m_Name: SizeChangesAmount
+  m_Name: SwitchAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1164,8 +1164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b487f8887884a0ba9a8fc6df2d3639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 
-  PlayerDeath: {fileID: 1935252101}
   CharacterSwitching: {fileID: 0}
 --- !u!61 &1037797553
 BoxCollider2D:
@@ -4035,13 +4033,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BigJumpHeight: 7
   SmallJumpHeight: 5
-  sizeChanges: 2
-  switchedToRightCharacter: 0
+  Switches: 0
   IsGrounded: {fileID: 183591597}
   Player: {fileID: 1935252094}
-  HeadHitting: {fileID: 266014910}
-  SizeChangesAmount: {fileID: 940934513}
-  PlayerDeath: {fileID: 1935252101}
+  SwitchText: {fileID: 940934513}
   SmallToBig: {fileID: 822402966}
   BigToSmall: {fileID: 1678126458}
   SwitchingSound: {fileID: 2015454827}
@@ -4233,7 +4228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ecb294daeed4177abec8af175914b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dead: 0
 --- !u!1 &2015454825
 GameObject:
   m_ObjectHideFlags: 0

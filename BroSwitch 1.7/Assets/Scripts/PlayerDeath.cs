@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerDeath : MonoBehaviour
 {
+
     void Update()
     {
         if (transform.position.y <= -10  || Input.GetKey(KeyCode.R))
