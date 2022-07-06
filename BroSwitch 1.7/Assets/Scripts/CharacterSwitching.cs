@@ -58,7 +58,9 @@ public class CharacterSwitching : MonoBehaviour
             Switches = 7;
             SwitchToSmall();
             
-        } 
+        }
+
+        SwitchText.text = Switches.ToString();
     }
 
     private void Update()
