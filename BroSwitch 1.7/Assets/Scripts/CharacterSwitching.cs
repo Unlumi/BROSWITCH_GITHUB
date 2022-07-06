@@ -29,8 +29,7 @@ public class CharacterSwitching : MonoBehaviour
 
 
     private void Start()
-    {
-        
+    {   
         if (SceneManager.GetActiveScene().name == "Level_1")
         {
             sizeChanges = 2;
@@ -127,6 +126,8 @@ public class CharacterSwitching : MonoBehaviour
         IsGrounded.GetComponent<BoxCollider2D>().offset = new Vector2(0, -0.45f);
 
         PlayerMovement.jumpHeight = BigJumpHeight;
+
+        Debug.Log(BigJumpHeight);
 
         Player.GetComponent<Animator>().SetInteger("BigOrSmall", 1);
     }

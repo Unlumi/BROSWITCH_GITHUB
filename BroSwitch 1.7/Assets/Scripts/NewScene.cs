@@ -9,7 +9,6 @@ public class NewScene : MonoBehaviour
 
     public string currentScene;
 
-    public PlayerDeath PlayerDeath;
     public CharacterSwitching CharacterSwitching;
 
     // Start is called before the first frame update
@@ -21,12 +20,7 @@ public class NewScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScene = SceneManager.GetActiveScene().name;
-        if (PlayerDeath.dead == true)
-        {
-            print(PlayerDeath.dead);
-            SceneManager.LoadScene(currentScene);
-        } else if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             SceneManager.LoadScene("Menu");
         }
