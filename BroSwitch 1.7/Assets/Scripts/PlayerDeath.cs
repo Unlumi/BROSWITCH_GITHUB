@@ -10,7 +10,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (transform.position.y <= -10  || Input.GetKey(KeyCode.R))
         {
-            PlayerDeath();
+            PlDeath();
         }
     }
 
@@ -18,13 +18,13 @@ public class PlayerDeath : MonoBehaviour
     {
         if(collision.tag == "Spike")
         {
-            PlayerDeath();
+            PlDeath();
         }
     }
 
-    public void PDeath()
+    public void PlDeath()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
