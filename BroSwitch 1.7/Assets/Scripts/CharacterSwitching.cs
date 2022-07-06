@@ -31,32 +31,32 @@ public class CharacterSwitching : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level_1")
         {
             Switches = 2;
-            SwitchToBig();
+            SwitchToBig(false);
         }
         else if (SceneManager.GetActiveScene().name == "Level_2")
         {
             Switches = 3;
-            SwitchToBig();
+            SwitchToBig(false);
         }
         else if (SceneManager.GetActiveScene().name == "Level_3")
         {
             Switches = 2;
-            SwitchToSmall();
+            SwitchToSmall(false);
 
         } else if (SceneManager.GetActiveScene().name == "Level_4")
         {
             Switches = 5;
-            SwitchToBig();
+            SwitchToBig(false);
 
         } else if (SceneManager.GetActiveScene().name == "Level_5")
         {
             Switches = 6;
-            SwitchToSmall();
+            SwitchToSmall(false);
         }
         else if (SceneManager.GetActiveScene().name == "Level_6")
         {
             Switches = 7;
-            SwitchToSmall();
+            SwitchToSmall(false);
             
         }
 
@@ -83,19 +83,22 @@ public class CharacterSwitching : MonoBehaviour
 
         if (charakter == "Small")
         {
-            SwitchToBig();
+            SwitchToBig(true);
         }
         else
         {
-            SwitchToSmall();
+            SwitchToSmall(true);
         }
     }
 
-    private void SwitchToBig()
+    private void SwitchToBig(bool fx)
     {
-        charakter = "Big";
+        if (fx)
+        {
+            SmallToBig.Play();
+        }
 
-        SmallToBig.Play();
+        charakter = "Big";
 
         Player.GetComponent<BoxCollider2D>().size = new Vector2(0.4f, 0.8f);
 
@@ -103,16 +106,17 @@ public class CharacterSwitching : MonoBehaviour
 
         PlayerMovement.jumpHeight = BigJumpHeight;
 
-        Debug.Log(BigJumpHeight);
-
         Player.GetComponent<Animator>().SetInteger("BigOrSmall", 1);
     }
 
-    private void SwitchToSmall()
+    private void SwitchToSmall(bool fx)
     {
-        charakter = "Small";
+        if (fx)
+        {
+            BigToSmall.Play();
+        }
 
-        BigToSmall.Play();
+        charakter = "Small";
 
         Player.GetComponent<BoxCollider2D>().size = new Vector2(0.4f, 0.4f);
 
