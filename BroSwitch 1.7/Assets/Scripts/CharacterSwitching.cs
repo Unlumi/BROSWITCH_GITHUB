@@ -63,7 +63,7 @@ public class CharacterSwitching : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) || Switches > 0)
+        if (Input.GetKeyDown(KeyCode.Q) && Switches > 0)
         {
             
             SwitchCharakter();
