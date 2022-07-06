@@ -51,7 +51,7 @@ public class CharacterSwitching : MonoBehaviour
         } else if (SceneManager.GetActiveScene().name == "Level_5")
         {
             Switches = 6;
-            SwitchToBig();
+            SwitchToSmall();
         }
         else if (SceneManager.GetActiveScene().name == "Level_6")
         {
