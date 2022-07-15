@@ -69,6 +69,12 @@ public class CharacterSwitching : MonoBehaviour
             SwitchToSmall(false);
             Player.transform.position = new Vector2(-8.52f, 1.385f);
 
+        } else if (SceneManager.GetActiveScene().name == "Level_7")
+        {
+            Switches = 5;
+            SwitchToSmall(false);
+            Player.transform.position = new Vector2(-3.6f, 1.385f);
+
         }
 
         SwitchText.text = Switches.ToString();
@@ -79,7 +85,7 @@ public class CharacterSwitching : MonoBehaviour
         // Variable Declarations
 
 
-        if (Input.GetKeyDown(KeyCode.Q) && Switches > 0)
+        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && Switches > 0)
         {
             
             SwitchCharakter();
