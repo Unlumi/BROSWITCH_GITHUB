@@ -56,7 +56,7 @@ public class SceneManagement : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        LvlTransition.GetComponent<Animator>().SetTrigger("Start");
+        LvlTransition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
