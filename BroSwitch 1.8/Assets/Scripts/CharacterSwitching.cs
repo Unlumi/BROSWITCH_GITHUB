@@ -73,7 +73,7 @@ public class CharacterSwitching : MonoBehaviour
         {
             Switches = 5;
             SwitchToSmall(false);
-            Player.transform.position = new Vector2(-3.6f, 1.385f);
+            Player.transform.position = new Vector2(-8.52f, -3.6f);
 
         }
 
