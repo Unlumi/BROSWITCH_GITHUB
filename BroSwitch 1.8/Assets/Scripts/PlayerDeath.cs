@@ -26,8 +26,6 @@ public class PlayerDeath : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Base", LoadSceneMode.Additive);
-
-        Debug.Log("PLAYER = DEAD DU DUMMER BINCENT");
     }
 
 }
