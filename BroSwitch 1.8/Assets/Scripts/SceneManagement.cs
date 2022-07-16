@@ -16,14 +16,12 @@ public class SceneManagement : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("STARTED GAME");
 
         Player = GameObject.FindGameObjectWithTag("Player");
 
         if(SceneManager.GetActiveScene().name == "End")
         {
             SceneManager.UnloadSceneAsync("Base");
-            Debug.Log("UNLOAD BASE");
         }
 
         LvlTransition = GameObject.FindWithTag("LvlTransition").GetComponent<Animator>();
@@ -55,8 +53,6 @@ public class SceneManagement : MonoBehaviour
         Player.GetComponent<Animator>().SetTrigger("Teleport");
 
         StartCoroutine(LoadLevel());
-
-        Debug.Log("NEXTLEVEL FUNCTION");
     }
 
     IEnumerator LoadLevel()
@@ -67,8 +63,6 @@ public class SceneManagement : MonoBehaviour
 
         SceneManager.LoadScene(nextSceneIndex);
         SceneManager.LoadScene("Base", LoadSceneMode.Additive);
-
-        Debug.Log("IENUMERATOR");
 
     }
 }
