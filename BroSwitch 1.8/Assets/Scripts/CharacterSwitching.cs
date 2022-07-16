@@ -51,13 +51,15 @@ public class CharacterSwitching : MonoBehaviour
             SwitchToSmall(false);
             Player.transform.position = new Vector2(-7.55f, 2.36f);
 
-        } else if (SceneManager.GetActiveScene().name == "Level_4")
+        }
+        else if (SceneManager.GetActiveScene().name == "Level_4")
         {
             Switches = 5;
             SwitchToBig(false);
             Player.transform.position = new Vector2(-8.52f, 0.74f);
 
-        } else if (SceneManager.GetActiveScene().name == "Level_5")
+        }
+        else if (SceneManager.GetActiveScene().name == "Level_5")
         {
             Switches = 6;
             SwitchToSmall(false);
@@ -69,13 +71,22 @@ public class CharacterSwitching : MonoBehaviour
             SwitchToSmall(false);
             Player.transform.position = new Vector2(-8.52f, 1.385f);
 
-        } else if (SceneManager.GetActiveScene().name == "Level_7")
+        }
+        else if (SceneManager.GetActiveScene().name == "Level_7")
         {
             Switches = 6;
             SwitchToSmall(false);
             Player.transform.position = new Vector2(-8.52f, -3.6f);
 
         }
+        else if (SceneManager.GetActiveScene().name == "Level_8")
+        {
+            Switches = 3;
+            SwitchToBig(false);
+            Player.transform.position = new Vector2(-8.515f, 1.745f);
+
+        }
+
 
         SwitchText.text = Switches.ToString();
     }
