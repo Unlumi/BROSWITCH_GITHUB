@@ -71,7 +71,7 @@ public class CharacterSwitching : MonoBehaviour
 
         } else if (SceneManager.GetActiveScene().name == "Level_7")
         {
-            Switches = 5;
+            Switches = 6;
             SwitchToSmall(false);
             Player.transform.position = new Vector2(-8.52f, -3.6f);
 
