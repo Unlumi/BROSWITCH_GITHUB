@@ -86,6 +86,13 @@ public class CharacterSwitching : MonoBehaviour
             Player.transform.position = new Vector2(-8.515f, 1.745f);
 
         }
+        else if (SceneManager.GetActiveScene().name == "Level_9")
+        {
+            Switches = 6;
+            SwitchToBig(false);
+            Player.transform.position = new Vector2(-8.5f, -3.27f);
+
+        }
 
 
         SwitchText.text = Switches.ToString();
