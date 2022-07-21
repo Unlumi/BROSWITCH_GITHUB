@@ -5862,8 +5862,8 @@ Tilemap:
   - first: {x: -3, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 10
-      m_TileSpriteIndex: 10
+      m_TileIndex: 14
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6181,7 +6181,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 983ed140aee5e4a18a3a3a1e807a7ec7, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 39f549d045ed94e4e9765280d62658a5, type: 2}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: 381c1d391b21c4ee4ab455d5c28c9856, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 8cb2dd9e045fb4edd8c9f2bebf19dfe7, type: 2}
@@ -6189,8 +6189,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b2f0ecad51a364049862aeff8bf8ae23, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 498be38036eb24e6eb98c1a083aa9c1d, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5f2634588db0e4c5aa866aa12e0f2157, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 7b9af890b06574979a070e398f016dc8, type: 2}
   - m_RefCount: 1
@@ -6200,8 +6200,8 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 55ef46c45fad249418eb8b57e64817d1, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -452917006930280098, guid: 83033595abd274ed7b59865e9a83b10a, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 8899162574039976550, guid: 2362199b6003547fcbca0e609d7238ba, type: 3}
   - m_RefCount: 1
@@ -6220,7 +6220,7 @@ Tilemap:
     m_Data: {fileID: -1660879357769696001, guid: 9eccdb6d49e984f4986f6a26ce3a5cb5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 7663385502839477543, guid: c06c971b4973c4161bfd43af2a55c556, type: 3}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 6591447657727044146, guid: 538ee02ca78b94576949bb2540b54047, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -1389532498175513583, guid: da4dd33eafdc74556a74783168ca4d1f, type: 3}
