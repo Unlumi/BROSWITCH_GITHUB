@@ -88,8 +88,8 @@ public class CharacterSwitching : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Level_9")
         {
-            Switches = 6;
-            SwitchToBig(false);
+            Switches = 2;
+            SwitchToSmall(false);
             Player.transform.position = new Vector2(-8.5f, -3.27f);
 
         }

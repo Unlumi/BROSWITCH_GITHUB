@@ -8,7 +8,7 @@ public class PlayerDeath : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y <= -10  || Input.GetKey(KeyCode.R))
+        if (transform.position.y <= -9  || Input.GetKey(KeyCode.R))
         {
             PlDeath();
         }
